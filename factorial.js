@@ -1,6 +1,8 @@
 // assuming n is a positive integer
 function factorial(n) {
-  if(n <= 1) return 1;
+  if (n <= 1) {
+    return 1;
+  }
   for (let i = n - 1; i > 1; i--) {
     n *= i;
   }
@@ -8,7 +10,9 @@ function factorial(n) {
 }
 
 function factorialRecurse(n) {
-  if(n <= 1) return 1;
+  if (n <= 1) {
+    return 1;
+  }
   return n * factorialRecurse(n - 1)
 }
 
